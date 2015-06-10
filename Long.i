@@ -1,4 +1,4 @@
-%module class
+%module LongNum
 %{
 /* Includes the header in the wrapper code */
 #include "class.h"
