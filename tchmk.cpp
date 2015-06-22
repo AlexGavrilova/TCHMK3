@@ -3,7 +3,6 @@
 LongNumber ReadNumber(unsigned long long int value)
 {
 	struct LongNumber num;
-
 	num.pointer = (unsigned int*)malloc(sizeof(unsigned int)*(3));
 	num.size = 0;
 
