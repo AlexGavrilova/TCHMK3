@@ -1,5 +1,6 @@
 all:
-	swig -c++ -python longArifmetics.i
-	g++ -c -w -std=c++11 longArifmetics.cpp
-	g++ -c -w -std=c++11 longArifmetics_wrap.cxx -I/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
-	g++ -lpython -dynamiclib longArifmetics.o longArifmetics_wrap.o -o longArifmetics.so 
+	swig -c++ -python ClassLN.i
+	g++ -c -w -std=c++11 ClassLN.cpp
+	g++ -c -w -std=c++11 tchmk.cpp
+	g++ -c -w -std=c++11 longNumber_wrap.cxx -I/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
+	g++ -lpython -dynamiclib ClassLN.o tchmk.o ClassLN_wrap.o -o _ClassLN.so 
