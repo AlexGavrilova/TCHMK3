@@ -18,6 +18,5 @@ class ClassLN
         ClassLN operator*(ClassLN &right);
         ClassLN operator/(ClassLN &right);
         ClassLN operator%(ClassLN &right);
-
         friend ClassLN PowMod(ClassLN &base, ClassLN &exp, ClassLN &mod); 
 };
