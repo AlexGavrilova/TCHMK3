@@ -4,9 +4,9 @@ import os
 
 if len(sys.argv) < 5 or len(sys.argv) > 7:
         print "You must be enter more than 5 and fewer than 7 arguments. For example:"
-	print "<file_a> <[ + | - | x | / | % | ^ ]> <file_b> <file_result> <file_module>"
+	print "<file_a> <[ + | - | * | / | % | ^ ]> <file_b> <file_result> <file_module>"
 	print "or:"
-	print "<file_a> <[ + | - | x | / | % | ^ ]> <file_b> <file_result> <file_module> <-b>"
+	print "<file_a> <[ + | - | * | / | % | ^ ]> <file_b> <file_result> <file_module> <-b>"
 	sys.exit(0)
 
 bin = 0
@@ -52,7 +52,7 @@ if not os.path.isfile(sys.argv[3]):
     print "File not found: ", sys.argv[3]
     sys.exit(0)
 
-if ((len(sys.argv[2]) > 1 or sys.argv[2][0] == '\0') or sys.argv[2][0] != '+' and sys.argv[2][0] != '-' and sys.argv[2][0] != 'x' and sys.argv[2][0] != '/' and sys.argv[2][0] != '%' and sys.argv[2][0] != '^'):
+if ((len(sys.argv[2]) > 1 or sys.argv[2][0] == '\0') or sys.argv[2][0] != '+' and sys.argv[2][0] != '-' and sys.argv[2][0] != '*' and sys.argv[2][0] != '/' and sys.argv[2][0] != '%' and sys.argv[2][0] != '^'):
     print "Bad operation: ", sys.argv[2][0]
     sys.exit(0) 
 
