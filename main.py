@@ -72,7 +72,7 @@ if sys.argv[2][0] == '+':
     result = a + b
 if sys.argv[2][0] == '-':
     result = a - b
-if sys.argv[2][0] == 'x':
+if sys.argv[2][0] == '*':
     result = a * b
 if sys.argv[2][0] == '/':
     result = a / b
